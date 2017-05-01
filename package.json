@@ -1,0 +1,18 @@
+{
+  "name": "realdatabase",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run ts\" \"npm run server\"",
+    "ts": "tsc --watch server.ts",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
